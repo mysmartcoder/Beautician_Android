@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        beautician {
+            keyAlias 'beautician'
+            keyPassword 'beautician@@321'
+            storeFile file('D:/Live Project/Live Project/beautician/For Playstore/beautician_keystore.jks')
+            storePassword 'beautician@@321'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    defaultConfig {
+        applicationId "beautician.beauty.android"
+        minSdkVersion 18
+        targetSdkVersion 23
+        versionCode 4
+        versionName "1.0.4"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.beautician
+        }
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+}
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile files('libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar')
+    compile 'com.facebook.android:facebook-android-sdk:4.7.0'
+    compile('com.twitter.sdk.android:twitter:1.8.0@aar') {
+        transitive = true;
+    }
+    compile 'com.google.android.gms:play-services:8.3.0'
+    compile 'com.android.support:multidex:1.0.0'
+}

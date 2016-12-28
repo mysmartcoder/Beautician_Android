@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_5">
+
+
+    <RelativeLayout
+        android:id="@+id/row_comments_relative"
+        android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_80"
+        android:layout_margin="@dimen/dimen_5"
+        android:background="@drawable/circle_services"
+        android:padding="@dimen/dimen_4">
+
+        <beautician.beauty.android.views.CircleImageView
+            android:id="@+id/row_comments_imageview_user_dp"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="@dimen/dimen_80"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dimen_5"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_user_profile" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/frow_comments_imageview_report"
+        android:layout_toEndOf="@+id/row_comments_relative"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/dimen_5"
+        android:paddingStart="@dimen/dimen_5">
+
+        <TextView
+            android:id="@+id/row_comments_textview_name"
+            style="@style/textview_sub_title_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/myPrimaryColor"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/textview_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_date"
+                android:visibility="gone"
+                android:textColor="@color/myPrimaryColor" />
+
+            <TextView
+                android:id="@+id/row_comments_textview_date"
+                style="@style/textview_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/myPrimaryColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/row_comments_textview_service1"
+                style="@style/textview_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext"
+                android:paddingStart="@dimen/dimen_5"
+                android:paddingEnd="@dimen/dimen_5"
+                android:paddingTop="@dimen/dimen_2"
+                android:paddingBottom="@dimen/dimen_2"
+                android:textColor="@color/myPrimaryColor" />
+
+            <TextView
+                android:id="@+id/row_comments_textview_service2"
+                style="@style/textview_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_5"
+                android:layout_marginStart="@dimen/dimen_5"
+                android:paddingTop="@dimen/dimen_2"
+                android:paddingBottom="@dimen/dimen_2"
+                android:background="@drawable/bg_edittext"
+                android:paddingStart="@dimen/dimen_5"
+                android:paddingEnd="@dimen/dimen_5"
+                android:textColor="@color/myPrimaryColor" />
+
+            <TextView
+                android:id="@+id/row_comments_textview_service_more"
+                style="@style/textview_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext"
+                android:paddingStart="@dimen/dimen_5"
+                android:paddingEnd="@dimen/dimen_5"
+                android:paddingTop="@dimen/dimen_2"
+                android:paddingBottom="@dimen/dimen_2"
+                android:text="@string/lbl_more"
+                android:textColor="@color/myPrimaryColor" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/row_comments_textview_description"
+            style="@style/textview_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:textColor="@color/myPrimaryColor" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/frow_comments_imageview_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_flag" />
+
+</RelativeLayout>

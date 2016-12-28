@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_spinner_textview_name"
+    style="@style/textview_normal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawablePadding="@dimen/dimen_5"
+    android:drawableEnd="@drawable/icon_white_down_arrow"
+    android:gravity="center_vertical|left"
+    android:padding="@dimen/dimen_5"
+    android:singleLine="true"
+    android:background="@color/myPrimaryColor"
+    android:textColor="@color/white" >
+
+</TextView>

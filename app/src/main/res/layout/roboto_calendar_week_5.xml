@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:tag="weekRow5">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:tag="dayOfMonthContainer29">
+
+        <beautician.beauty.android.views.calendarview.DayView
+            style="@style/CalendarView.DayOfTheMonth"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:tag="dayOfMonthText29"
+            android:text="@string/lbl_29" />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/circle_golden"
+            android:contentDescription="@string/app_name"
+            android:tag="dayOfMonthImage29" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:tag="dayOfMonthContainer30">
+
+
+        <beautician.beauty.android.views.calendarview.DayView
+            style="@style/CalendarView.DayOfTheMonth"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:tag="dayOfMonthText30"
+            android:text="@string/lbl_30" />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/circle_golden"
+            android:contentDescription="@string/app_name"
+            android:tag="dayOfMonthImage30" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:tag="dayOfMonthContainer31">
+
+
+        <beautician.beauty.android.views.calendarview.DayView
+            style="@style/CalendarView.DayOfTheMonth"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:tag="dayOfMonthText31"
+            android:text="@string/lbl_31" />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/circle_golden"
+            android:contentDescription="@string/app_name"
+            android:tag="dayOfMonthImage31" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:tag="dayOfMonthContainer32">
+
+
+        <beautician.beauty.android.views.calendarview.DayView
+            style="@style/CalendarView.DayOfTheMonth"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:tag="dayOfMonthText32"
+            android:text="@string/lbl_32" />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/circle_golden"
+            android:contentDescription="@string/app_name"
+            android:tag="dayOfMonthImage32" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:tag="dayOfMonthContainer33">
+
+        <beautician.beauty.android.views.calendarview.DayView
+            style="@style/CalendarView.DayOfTheMonth"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:tag="dayOfMonthText33"
+            android:text="@string/lbl_33" />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/circle_golden"
+            android:contentDescription="@string/app_name"
+            android:tag="dayOfMonthImage33" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:tag="dayOfMonthContainer34">
+
+        <beautician.beauty.android.views.calendarview.DayView
+            style="@style/CalendarView.DayOfTheMonth"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:tag="dayOfMonthText34"
+            android:text="@string/lbl_34" />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/circle_golden"
+            android:contentDescription="@string/app_name"
+            android:tag="dayOfMonthImage34" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:tag="dayOfMonthContainer35">
+
+        <beautician.beauty.android.views.calendarview.DayView
+            style="@style/CalendarView.DayOfTheMonth"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:tag="dayOfMonthText35"
+            android:text="@string/lbl_35" />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/circle_golden"
+            android:contentDescription="@string/app_name"
+            android:tag="dayOfMonthImage35" />
+    </LinearLayout>
+</LinearLayout>

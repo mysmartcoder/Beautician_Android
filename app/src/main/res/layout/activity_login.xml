@@ -1,0 +1,162 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10"
+        android:gravity="center"
+        android:id="@+id/activity_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_20">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/beautician_logo" />
+
+        <TextView
+            android:id="@+id/activity_login_textview_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/myPrimaryColor"
+            android:textSize="@dimen/text_large" />
+
+        <EditText
+            android:id="@+id/activity_login_edittext_username"
+            style="@style/edittext_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:hint="@string/hint_email_mobile" />
+
+        <EditText
+            android:id="@+id/activity_login_edittext_password"
+            style="@style/edittext_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/activity_login_textview_login"
+            style="@style/button_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center"
+            android:text="@string/lbl_login" />
+
+
+        <TextView
+            android:id="@+id/activity_login_textview_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="@string/lbl_forgot_password_with_q"
+            android:textColor="@color/myPrimaryColor"
+            android:textSize="@dimen/text_normal_app" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:background="@color/myPrimaryColor" />
+
+            <TextView
+                android:id="@+id/activity_login_textview_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:background="@color/white"
+                android:padding="@dimen/dimen_10"
+                android:text="@string/lbl_login_with"
+                android:textColor="@color/myPrimaryColor" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_10">
+
+            <TextView
+                android:id="@+id/activity_login_textview_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:drawableTop="@drawable/icon_facebook" />
+
+            <TextView
+                android:id="@+id/activity_login_textview_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:drawableTop="@drawable/icon_twitter" />
+
+
+            <TextView
+                android:id="@+id/activity_login_textview_instagram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:drawableTop="@drawable/icon_instagram" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:layout_centerInParent="true"
+            android:background="@color/myPrimaryColor" />
+
+        <TextView
+            android:id="@+id/activity_login_textview_dont_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_dont_account"
+            android:textColor="@color/myPrimaryColor"
+            android:textSize="@dimen/text_normal_app" />
+
+
+        <TextView
+            android:id="@+id/activity_login_textview_register"
+            style="@style/button_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center"
+            android:text="@string/lbl_signup" />
+
+
+    </LinearLayout>
+
+</ScrollView>

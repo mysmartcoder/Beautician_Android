@@ -1,0 +1,174 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/myPrimaryColor</item>-->
+        <!--<item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>-->
+        <!--<item name="colorAccent">@color/myAccentColor</item>-->
+        <!--<item name="android:textColorPrimary">@color/myTextPrimaryColor</item>-->
+        <!--<item name="drawerArrowStyle">@style/DrawerArrowStyle</item>-->
+
+        <!--<item name="android:windowBackground">@color/myWindowBackground</item>-->
+        <!--<item name="android:textAppearanceLargePopupMenu">@style/myPopupMenuTextAppearanceLarge-->
+        <!--</item>-->
+        <!--<item name="android:textAppearanceSmallPopupMenu">@style/myPopupMenuTextAppearanceSmall-->
+        <!--</item>-->
+        <!--<item name="android:alertDialogTheme">@style/CustomDialogTheme</item>-->
+
+    <!--</style>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/myPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
+        <item name="colorAccent">@color/myAccentColor</item>
+        <item name="android:textColorPrimary">@color/myTextPrimaryColor</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowBackground">@color/myWindowBackground</item>
+        <item name="android:popupMenuStyle">@style/myPopupMenu</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/myPopupMenuTextAppearanceSmall</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/myPopupMenuTextAppearanceLarge</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <!--<item name="android:windowFrame">@null</item>-->
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>-->
+        <!--<item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>-->
+        <!--<item name="android:colorBackgroundCacheHint">@null</item>-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--<item name="android:textColor">@color/myPrimaryColor</item>-->
+        <!--<item name="android:textColorPrimary">@color/myPrimaryColor</item>-->
+        <!--<item name="android:textAppearance">@color/myPrimaryColor</item>-->
+        <!--<item name="android:textColorSecondary">@color/myPrimaryColor</item>-->
+        <!--<item name="android:textAppearanceLarge">@style/textview_normal</item>-->
+
+
+    </style>
+
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="textview_title_normal">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+
+    <style name="customRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_custom_bar</item>
+        <item name="android:minHeight">@dimen/dimen_20</item>
+        <item name="android:maxHeight">@dimen/dimen_20</item>
+    </style>
+
+
+    <style name="textview_normal">
+        <item name="android:textSize">@dimen/text_normal_app</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">@color/myPrimaryColor</item>
+    </style>
+
+    <style name="textview_small">
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/myPrimaryColor</item>
+    </style>
+
+    <style name="textview_sliding_menu">
+        <item name="android:textSize">@dimen/text_normal_app</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/myPrimaryColor</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textview_sub_title_normal">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_sub_title</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:gravity">left</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="edittext_app">
+        <item name="android:textColor">@color/myPrimaryColor</item>
+        <item name="android:textColorHint">@color/dialog_bg</item>
+        <item name="android:textSize">@dimen/text_normal_app</item>
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:gravity">left</item>
+        <item name="android:padding">@dimen/dimen_10</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="button_app">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_normal_app</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dimen_10</item>
+        <item name="android:minWidth">@dimen/dimen_200</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+
+    <!--Popup Menu Style-->
+
+    <style name="myPopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/white_square</item>
+    </style>
+
+    <style name="myPopupMenuTextAppearanceSmall" parent="@style/TextAppearance.AppCompat.Widget.PopupMenu.Small">
+        <item name="android:textColor">@color/myPrimaryColor</item>
+        <item name="android:textSize">@dimen/text_normal_app</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:background">@color/white_secondary</item>
+    </style>
+
+    <style name="myPopupMenuTextAppearanceLarge" parent="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large">
+        <item name="android:textColor">@color/myPrimaryColor</item>
+        <item name="android:textSize">@dimen/text_sub_title</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:background">@color/white_secondary</item>
+    </style>
+
+    <!--Custom Calendar-->
+    <style name="CalendarView" />
+
+    <style name="CalendarView.MonthTitle">
+        <item name="android:textSize">@dimen/text_sub_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarView.DayOfTheWeek">
+        <item name="android:textSize">@dimen/text_normal_app</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CalendarView.DayOfTheMonth">
+        <item name="android:textSize">@dimen/text_normal_app</item>
+        <item name="android:minHeight">@dimen/minDayCellHeight</item>
+        <item name="android:layout_width">@dimen/text_date</item>
+        <item name="android:layout_height">@dimen/text_date</item>
+    </style>
+
+</resources>

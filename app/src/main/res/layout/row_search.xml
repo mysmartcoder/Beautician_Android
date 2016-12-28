@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_square"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_5">
+
+    <RelativeLayout
+        android:id="@+id/row_search_relative_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_5">
+
+        <ImageView
+            android:id="@+id/row_search_imageview_suggested"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_blue"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/dimen_5"
+            android:src="@drawable/icon_suggest" />
+
+        <RelativeLayout
+            android:id="@+id/row_search_relative_pic"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="@dimen/dimen_80"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:background="@drawable/circle_services"
+            android:padding="@dimen/dimen_4">
+
+
+            <beautician.beauty.android.views.CircleImageView
+                android:id="@+id/row_search_imageview_user_dp"
+                android:layout_width="@dimen/dimen_80"
+                android:layout_height="@dimen/dimen_80"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dimen_5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_user_profile" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_search_relative_pic"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/row_search_textview_name"
+                style="@style/textview_sub_title_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/dimen_125"
+                android:gravity="center"
+                android:padding="@dimen/dimen_5"
+                android:singleLine="true"
+                android:textColor="@color/myPrimaryColor" />
+
+
+            <LinearLayout
+                android:id="@+id/row_search_linear_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/row_search_textview_service1"
+                    style="@style/textview_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext"
+                    android:paddingBottom="@dimen/dimen_2"
+                    android:paddingEnd="@dimen/dimen_5"
+                    android:paddingStart="@dimen/dimen_5"
+                    android:paddingTop="@dimen/dimen_2"
+                    android:ellipsize="end"
+                    android:textColor="@color/myPrimaryColor" />
+
+                <TextView
+                    android:id="@+id/row_search_textview_service2"
+                    style="@style/textview_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_5"
+                    android:layout_marginStart="@dimen/dimen_5"
+                    android:background="@drawable/bg_edittext"
+                    android:paddingBottom="@dimen/dimen_2"
+                    android:paddingEnd="@dimen/dimen_5"
+                    android:paddingStart="@dimen/dimen_5"
+                    android:paddingTop="@dimen/dimen_2"
+                    android:ellipsize="end"
+                    android:textColor="@color/myPrimaryColor" />
+
+                <TextView
+                    android:id="@+id/row_search_textview_service_more"
+                    style="@style/textview_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext"
+                    android:paddingBottom="@dimen/dimen_2"
+                    android:paddingEnd="@dimen/dimen_5"
+                    android:paddingStart="@dimen/dimen_5"
+                    android:paddingTop="@dimen/dimen_2"
+                    android:text="@string/lbl_more"
+                    android:textColor="@color/myPrimaryColor" />
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/row_search_ratingbar_satisfy"
+                style="@style/customRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:paddingTop="@dimen/dimen_5"
+                android:rating="3"
+                android:stepSize="1.0" />
+
+            <RatingBar
+                android:id="@+id/row_search_ratingbar_committed"
+                style="@style/customRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingTop="@dimen/dimen_5"
+                android:rating="3"
+                android:stepSize="1.0" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

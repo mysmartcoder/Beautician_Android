@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/activity_instagram_picture_textview_back"
+        style="@style/textview_title_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/myPrimaryColor"
+        android:drawableStart="@drawable/icon_back"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10"
+        android:text="@string/lbl_select_picture"
+        android:textColor="@color/white" />
+
+    <GridView
+        android:id="@+id/activity_instagram_picture_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10"
+        android:horizontalSpacing="@dimen/dimen_5"
+        android:verticalSpacing="@dimen/dimen_10"
+        android:numColumns="3" />
+
+</LinearLayout>

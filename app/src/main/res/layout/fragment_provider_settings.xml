@@ -1,0 +1,610 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_30">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            android:background="@drawable/white_square"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_5">
+
+            <TextView
+                style="@style/textview_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_10"
+                android:text="@string/lbl_country_city"
+                android:textColor="@color/myPrimaryColor"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_5">
+
+                <Spinner
+                    android:id="@+id/fragment_provider_settigs_spinner_country"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext"
+                    android:padding="@dimen/dimen_5" />
+
+                <Spinner
+                    android:id="@+id/fragment_provider_settigs_spinner_city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext"
+                    android:padding="@dimen/dimen_5" />
+
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/textview_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_10"
+                android:text="@string/lbl_location_policy"
+                android:textColor="@color/myPrimaryColor"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_my_place"
+                    style="@style/textview_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:drawableStart="@drawable/icon_radio_btn_unselect"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_my_place"
+                    android:textColor="@color/myPrimaryColor" />
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_seeker_place"
+                    style="@style/textview_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:drawableStart="@drawable/icon_radio_btn_unselect"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_seeker_place"
+                    android:textColor="@color/myPrimaryColor" />
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_both"
+                    style="@style/textview_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:drawableStart="@drawable/icon_radio_btn_unselect"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_both"
+                    android:textColor="@color/myPrimaryColor" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_address"
+                    style="@style/textview_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/fragment_provider_settigs_imageview_pic_location"
+                    android:padding="@dimen/dimen_10"
+                    android:singleLine="false"
+                    android:textColor="@color/myPrimaryColor" />
+
+                <ImageView
+                    android:id="@+id/fragment_provider_settigs_imageview_pic_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/dimen_5"
+                    android:src="@drawable/icon_map" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fragment_provider_settigs_relative_trans_fees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_5">
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_trans_fees"
+                    style="@style/textview_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/fragment_provider_settigs_edittex_trans_fees"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_trans_fees"
+                    android:textColor="@color/myPrimaryColor" />
+
+                <EditText
+                    android:id="@+id/fragment_provider_settigs_edittex_trans_fees"
+                    style="@style/edittext_app"
+                    android:layout_width="@dimen/dimen_80"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/dimen_10"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            android:background="@drawable/white_square"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_10">
+
+            <TextView
+                android:id="@+id/fragment_provider_settigs_textview_min_fees"
+                style="@style/textview_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_5"
+                android:layout_centerVertical="true"
+                android:singleLine="false"
+                android:layout_toStartOf="@+id/fragment_provider_settigs_edittex_min_fees"
+                android:text="@string/lbl_min_app_fees"
+                android:textColor="@color/myPrimaryColor" />
+
+            <EditText
+                android:id="@+id/fragment_provider_settigs_edittex_min_fees"
+                style="@style/edittext_app"
+                android:layout_width="@dimen/dimen_80"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:hint="0"
+                android:inputType="number"
+                android:singleLine="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            android:background="@drawable/white_square"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10">
+
+            <TextView
+                android:id="@+id/fragment_provider_settigs_textview_lowest_acceptable_rating"
+                style="@style/textview_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext"
+                android:drawableEnd="@drawable/icon_blue_right_arrow"
+                android:gravity="left"
+                android:padding="@dimen/dimen_10"
+                android:text="@string/lbl_lowest_acceptable_rating"
+                android:textColor="@color/myPrimaryColor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            android:background="@drawable/white_square"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/fragment_provider_settigs_textview_auto_accept"
+                style="@style/textview_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext"
+                android:drawableEnd="@drawable/icon_blue_right_arrow"
+                android:padding="@dimen/dimen_10"
+                android:singleLine="false"
+                android:text="@string/lbl_period_of_auto" />
+
+            <beautician.beauty.android.views.RangeSeekBar
+                android:id="@+id/fragment_provider_settigs_range_seekbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                rsb:absoluteMaxValue="365"
+                rsb:absoluteMinValue="0" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            android:background="@drawable/white_square"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textview_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_10"
+                android:text="@string/lbl_working_schedul"
+                android:textColor="@color/myPrimaryColor"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_5">
+
+                <CheckBox
+                    android:id="@+id/fragment_provider_settigs_checkbox_sunday"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_selector"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_sunday"
+                    android:textColor="@color/white_secondary" />
+
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_sunday_starttime"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_start_time"
+                    android:textColor="@color/white_secondary" />
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_sunday_endtime"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_end_time"
+                    android:textColor="@color/white_secondary" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0_5"
+                android:background="@color/white_secondary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_5">
+
+                <CheckBox
+                    android:id="@+id/fragment_provider_settigs_checkbox_monday"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_selector"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_monday"
+                    android:textColor="@color/white_secondary" />
+
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_monday_starttime"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_start_time"
+                    android:textColor="@color/white_secondary" />
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_monday_endtime"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_end_time"
+                    android:textColor="@color/white_secondary" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0_5"
+                android:background="@color/white_secondary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_5">
+
+                <CheckBox
+                    android:id="@+id/fragment_provider_settigs_checkbox_tuesday"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_selector"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_tuesday"
+                    android:textColor="@color/white_secondary" />
+
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_tueday_starttime"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_start_time"
+                    android:textColor="@color/white_secondary" />
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_tuesday_endtime"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_end_time"
+                    android:textColor="@color/white_secondary" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0_5"
+                android:background="@color/white_secondary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_5">
+
+                <CheckBox
+                    android:id="@+id/fragment_provider_settigs_checkbox_wednesday"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_selector"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_wednesday"
+                    android:textColor="@color/white_secondary" />
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_wednesday_starttime"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_start_time"
+                    android:textColor="@color/white_secondary" />
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_wednesday_endtime"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_end_time"
+                    android:textColor="@color/white_secondary" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0_5"
+                android:background="@color/white_secondary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_5">
+
+                <CheckBox
+                    android:id="@+id/fragment_provider_settigs_checkbox_thursday"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_selector"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_thurseday"
+                    android:textColor="@color/white_secondary" />
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_thurseday_starttime"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_start_time"
+                    android:textColor="@color/white_secondary" />
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_thurseday_endtime"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_end_time"
+                    android:textColor="@color/white_secondary" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0_5"
+                android:background="@color/white_secondary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_5">
+
+                <CheckBox
+                    android:id="@+id/fragment_provider_settigs_checkbox_friday"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_selector"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_friday"
+                    android:textColor="@color/white_secondary" />
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_friday_starttime"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_start_time"
+                    android:textColor="@color/white_secondary" />
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_friday_endtime"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_end_time"
+                    android:textColor="@color/white_secondary" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0_5"
+                android:background="@color/white_secondary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_5">
+
+                <CheckBox
+                    android:id="@+id/fragment_provider_settigs_checkbox_saturday"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_selector"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_saturday"
+                    android:textColor="@color/white_secondary" />
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_saturday_starttime"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_start_time"
+                    android:textColor="@color/white_secondary" />
+
+                <TextView
+                    android:id="@+id/fragment_provider_settigs_textview_saturday_endtime"
+                    style="@style/textview_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="@dimen/dimen_5"
+                    android:text="@string/lbl_end_time"
+                    android:textColor="@color/white_secondary" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/fragment_provider_settigs_checkbox_accept"
+            style="@style/textview_sub_title_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:button="@drawable/checkbox_selector"
+            android:gravity="center_vertical|left"
+            android:padding="@dimen/dimen_10"
+            android:text="@string/lbl_accept_terms"
+            android:textColor="@color/myPrimaryColor" />
+
+        <TextView
+            android:id="@+id/fragment_provider_settigs_textview_save"
+            style="@style/button_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:gravity="center"
+            android:text="@string/lbl_save" />
+
+    </LinearLayout>
+
+</ScrollView>
+

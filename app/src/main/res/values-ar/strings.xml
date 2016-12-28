@@ -1,0 +1,329 @@
+<resources>
+    <string name="app_name">beautician</string>
+
+    <string name="lbl_ok">موافق</string>
+    <string name="lbl_yes">نعم</string>
+    <string name="lbl_may_be">ربما</string>
+    <string name="lbl_no">لا</string>
+    <string name="lbl_cancel">الغاء</string>
+    <string name="lbl_confirm">تأكيد</string>
+    <string name="lbl_enable">تفعيل</string>
+    <string name="lbl_cancel_capitial">الغاء</string>
+    <string name="lbl_gallery">البوم</string>
+    <string name="lbl_camera">كاميرا</string>
+    <string name="lbl_cancelled">ملغي</string>
+    <string name="lbl_provider">فنانات التجميل</string>
+    <string name="lbl_provider_detail">معلومات الفنانة</string>
+    <string name="lbl_sr">ر.س</string>
+
+    <!--Side Menu-->
+    <string name="lbl_home">البداية</string>
+    <string name="lbl_search">بحث</string>
+    <string name="lbl_my_services">خدماتي</string>
+    <string name="lbl_profile">حسابي </string>
+    <string name="lbl_my_calender">جدولي</string>
+    <string name="lbl_buy_ads">للاعلان</string>
+    <string name="lbl_become_a_provider">التسجيل كفنانة تجميل</string>
+    <string name="lbl_logout">تسجيل الخروج</string>
+    <string name="lbl_change_lang">غير اللغة</string>
+    <string name="lbl_disable_account">الغاء التفعيل</string>
+    <string name="lbl_contact_us">للتواصل معنا</string>
+
+    <!--Login and Register Screen-->
+    <string name="lbl_login">تسجيل الدخول</string>
+    <string name="lbl_login_with">الدخول بواسطة</string>
+    <string name="lbl_register">التسجيل</string>
+    <string name="lbl_forgot_password">هل نسيت كلمة المرور؟</string>
+    <string name="hint_email_mobile">البريد أو الجوال</string>
+    <string name="hint_username">اسم المستخدم</string>
+    <string name="hint_fullname">الاسم الكامل</string>
+    <string name="hint_password">كلمة المرور</string>
+    <string name="hint_old_password">كلمة المرور السابقة</string>
+    <string name="hint_new_password">كلمة المرور الجديدة</string>
+    <string name="lbl_no_account">ألم تسجلي بعد؟</string>
+    <string name="lbl_submit">ارسال</string>
+    <string name="lbl_book_an_appointment">حجز الموعد</string>
+    <string name="lbl_signup">التسجيل</string>
+    <string name="lbl_forgot_password_with_q">هل نسيت كلمة المرور؟</string>
+    <string name="lbl_dont_account">ألم تسجلي بعد؟</string>
+    <string name="hint_confirm_password">تأكيد كلمة المرور</string>
+    <string name="lbl_request_a_verification_code">طلب رمز التفعيل</string>
+    <string name="hint_verify_code">التأكد من الرمز</string>
+    <string name="lbl_verify">تأكد</string>
+    <string name="lbl_by_sign_up_you_accept_privacy_policy_use_policy">دخولك يؤكد القبول </string>
+    <string name="lbl_by_sign_up_privacy_policy"> سياسة الخصوصية</string>
+    <string name="lbl_by_sign_up_use_policy"> استخدم السياسة</string>
+    <string name="lbl_by_sign_up_and">&amp;</string>
+    <string name="lbl_set_new_password">استخدم كلمة مرور جديدة</string>
+    <string name="lbl_rotate">تدوير</string>
+    <string name="lbl_done">تم</string>
+    <string name="lbl_privacy_policy">سياسة الخصوصية</string>
+    <string name="lbl_accept_terms">قبول البنود والشروط</string>
+
+    <!--Profile Screen-->
+    <string name="lbl_setting">إعداداتي</string>
+    <string name="lbl_change_password">تغيير كلمة المرور</string>
+    <string name="lbl_change_my_password">تغيير كلمة المرور</string>
+    <string name="lbl_save">حفظ</string>
+    <string name="hint_email">بريد</string>
+    <string name="hint_mobile">جوال</string>
+    <string name="hint_enter_new_emailid">ادخال البريد</string>
+    <string name="hint_enter_mobile_no">    رقم الهاتف(9669988667755)</string>
+
+    <string name="hint_enter_new_username">ادخال الاسم الكامل</string>
+    <string name="lbl_edit_username">تعديل اسم المستخدم</string>.
+    <string name="lbl_edit_emial">تعديل البريد المستخدم</string>.
+    <string name="lbl_edit_mobile">تعديل رقم الجوال المستخدم</string>
+    <string name="lbl_satisfaction">الرضا:</string>
+    <string name="lbl_commitment">الالتزام:</string>
+
+
+    <!--Report-->
+    <string name="lbl_report">بلاغات</string>
+    <string name="lbl_report_user">مستخدم</string>
+    <string name="lbl_report_comment">تعليق</string>
+    <string name="lbl_report_service">خدمة</string>
+    <string name="lbl_report_offensive">مسيء</string>
+    <string name="lbl_report_out_topic">غير متعلق بالتجميل</string>
+    <string name="lbl_report_other">أخرى</string>
+    <string name="hint_enter_your_comment">لكتابة تعليق</string>
+    <string name="lbl_report_on_provider">تبليغ عن فنانة تجميل</string>
+    <string name="lbl_report_on_service">تبليغ عن خدمة</string>
+
+
+    <!--Sharing Screen-->
+    <string name="lbl_share_on">مشاركة على</string>
+    <string name="lbl_whatsapp">WhatsApp</string>
+    <string name="lbl_facebook">Facebook</string>
+    <string name="lbl_twitter">Twitter</string>
+    <string name="lbl_instagram">Instagram</string>
+
+    <!--Settings-->
+    <string name="lbl_distance_range">مدى المسافة - %1s km</string>
+    <string name="lbl_distance_range_current">المسافة القصوى من موقعك الحالي</string>
+    <string name="lbl_distance_range_other">المسافة القصوى من مركز المدينة المحددة</string>
+    <string name="lbl_location_policy">سياسة المكان</string>
+    <string name="lbl_country_city">البلد والمدينة</string>
+    <string name="lbl_my_place">في مكان الفنانة فقط </string>
+    <string name="lbl_seeker_place">في مكان الزبونة فقط </string>
+    <string name="lbl_both">كلاهما</string>
+    <string name="lbl_lowest_acceptable_rating"> أقل تقييم للزبونة أقبل التعامل معها</string>
+    <string name="lbl_working_schedul">أوقات العمل</string>
+    <string name="lbl_sunday">الأحد</string>
+    <string name="lbl_monday">الأثنين</string>
+    <string name="lbl_tuesday">الثلاثاء</string>
+    <string name="lbl_wednesday">الاربعاء</string>
+    <string name="lbl_thurseday">الخميس</string>
+    <string name="lbl_friday">الجمعة</string>
+    <string name="lbl_saturday">السبت</string>
+    <string name="lbl_start_time">وقت البداية Time</string>
+    <string name="lbl_end_time"> وقت النهاية</string>
+    <string name="lbl_define_the_lowest_acceptable_rating_for_customer">ما هو اقل تقييم للزبونات اللاتي تقبلين التعامل معهن؟</string>
+    <string name="hint_address">العنوان</string>
+    <string name="hint_city">المدينة</string>
+    <string name="hint_country">الدولة</string>
+    <string name="lbl_location">المكان</string>
+    <string name="lbl_location_with_colon">المكان : %s</string>
+    <string name="lbl_no_address">العنوان غير معرف</string>
+
+
+
+    <!--Add Beauty Services-->
+    <string name="lbl_add_beauty_service">خدمة تجميل</string>
+    <string name="hint_service_category">فئة الخدمة</string>
+    <string name="hint_service_name">اسم الخدمة</string>
+    <string name="hint_service_description">وصف الخدمة</string>
+    <string name="hint_service_average_time">مدة تقديم الخدمة</string>
+    <string name="hint_service_average_price">سعر الخدمة</string>
+    <string name="lbl_add_picture">اضافة صورة</string>
+    <string name="lbl_add_service">اضافة خدمة</string>
+    <string name="lbl_update_service">تحديث خدمة</string>
+    <string name="lbl_select_picture">اختيار صورة</string>
+
+    <!--Provider Screen-->
+    <string name="lbl_more">أخرى</string>
+    <string name="lbl_comments">تعليقات</string>
+    <string name="lbl_by">بواسطة</string>
+    <string name="lbl_quentity">العدد</string>
+    <string name="lbl_average_time">المدة : %s</string>
+    <string name="lbl_average_price">السعر : SR %s</string>
+    <string name="lbl_confirmed_appointment">موعد مؤكد : %s</string>
+    <string name="lbl_location_policy_details">سياسة المكان : %s</string>
+    <string name="lbl_trans_fees">Transportation fees</string>
+    <string name="lbl_min_app_fees">Minimum appointment fees</string>
+    <string name="lbl_trans_fees_with_value">Transportation fees : %s</string>
+    <string name="lbl_min_app_fees_with_value">Minimum appointment fees : %s SR</string>
+
+    <!--Comments Screen-->
+    <string name="lbl_date">التاريخ </string>
+    <string name="lbl_default">0</string>
+
+    <!--Search Screen-->
+    <string name="lbl_advance_search">بحث متقدم</string>
+    <string name="lbl_time">الوقت</string>
+    <string name="lbl_Date">التاريخ</string>
+    <string name="lbl_select_time">اختيار الوقت</string>
+    <string name="lbl_select_Date">اختيار التاريخ</string>
+    <string name="lbl_provider_place">مكان الفنانة</string>
+    <string name="lbl_price_range">نطاق الأسعار</string>
+    <string name="lbl_minimum_price">الأدنى</string>
+    <string name="lbl_maximum_price">الأقصى</string>
+    <string name="lbl_minimum_rate">التقييم الأدنى</string>
+    <string name="lbl_select_date_time">اختيار التاريخ و الوقت</string>
+    <string name="hint_enter_city">اختيار</string>
+    <string name="hint_service_provider_name">اسم الخدمة او الفنانة</string>
+    <string name="hint_select_country">اختيارالدولة</string>
+    <string name="hint_select_city">اختيار المدينة</string>
+    <string name="lbl_min_price">السعر الأدنى للموعد</string>
+    <string name="lbl_max_price">السعر الأعلى للموعد</string>
+
+    <!--Auto Accept-->
+    <string name="lbl_period_of_auto">فترة قبول المواعيد بشكل مباشر</string>
+    <string name="lbl_directly_accept">اقبل المواعيد بشكل مباشر اذ سبقت الموعد بـ</string>
+    <string name="lbl_ahead_by">قبل عن طريق:</string>
+    <string name="lbl_until">حتى :</string>
+    <string name="lbl_days">يوم</string>
+    <string name="lbl_months">شهر</string>
+
+    <!--Book an Appointment Screen-->
+    <string name="lbl_book_an_appointment_">للحجز</string>
+    <string name="lbl_services">خدمات</string>
+    <string name="lbl_total_services_price">السعر الاجمالي</string>
+    <string name="lbl_check_availability">إمكانية الحجز</string>
+    <string name="lbl_suggested_provider">نقترح لك</string>
+    <string name="lbl_pick_your_location">تحديد المكان</string>
+    <string name="lbl_service_has_been_deleted">تم حذف الخدمة بنجاح</string>
+
+
+    <!--Deposit Screen-->
+    <string name="lbl_deposit">المقدم</string>
+    <string name="lbl_provider_">الفنانة</string>
+    <string name="lbl_location_">المكان</string>
+    <string name="lbl_appointment_confirmation_deposit">مقدم تأكيد الموعد</string>
+    <string name="lbl_deposit_option">وسيلة الدفع  </string>
+    <string name="lbl_sadad">سداد اون لاين</string>
+    <string name="lbl_credit_card">بطاقة إئتمانية</string>
+    <string name="lbl_paypal">باي بال</string>
+    <string name="lbl_pay_deposit">ادفع المقدم</string>
+    <string name="lbl_paid_deposit">مقدم لتأكيد الحجز</string>
+    <string name="lbl_cod">الدفع عند التسليم</string>
+    <string name="lbl_use_beautician_wallet">استخدم محفظة زينا</string>
+    <string name="lbl_your_current_balance">(الرصيد الحالي SR %1s)</string>
+    <string name="lbl_select_option_to_pay">اختيار وسيلة الدفع</string>
+
+
+    <!--Appointment Details Screen-->
+    <string name="lbl_appointment_details">تفاصيل الموعد</string>
+    <string name="lbl_refrence_no">الرقم المرجعي </string>
+    <string name="lbl_status">الحالة</string>
+    <string name="lbl_confirm_show_up">تأكيد الوصول</string>
+    <string name="lbl_contact_no">معلومات التواصل</string>
+    <string name="lbl_seeker">الزبونة</string>
+    <string name="lbl_cancel_appointment">إلغاء الموعد</string>
+    <string name="lbl_rate_user">تقييم المستخدمة</string>
+    <string name="lbl_report_user_c">تبليغ عن المستخدمة</string>
+    <string name="lbl_comments_">تعليقات</string>
+    <string name="lbl_you_missed_appointment">لقد فاتك هذا الموعد</string>
+
+
+    <!--Buy Ads Screen-->
+    <string name="lbl_buy_feature_ads">شراء اعلان</string>
+    <string name="lbl_select_your_ads">اختيار نوع الاعلان</string>
+    <string name="lbl_category_page">في صفحة الفئات</string>
+    <string name="lbl_search_result_ads">في صفحة نتائج البحث</string>
+    <string name="lbl_suggested_ads">في صفحة الاقتراحات</string>
+    <string name="lbl_select_period_time">اختيار فترة الاعلان</string>
+    <string name="lbl_start_date">تاريخ البداية</string>
+    <string name="lbl_end_date">تاريخ النهاية</string>
+    <string name="lbl_add_summary">ملخص الاعلان المطلوب</string>
+    <string name="lbl_start_date_">تاريخ البداية</string>
+    <string name="lbl_end_date_">تاريخ النهاية</string>
+    <string name="lbl_price_">السعر</string>
+    <string name="lbl_payment">الدفع</string>
+    <string name="lbl_pay">ادفع</string>
+    <string name="lbl_buy_ads_c">اشتر الاعلان</string>
+
+    <!--My Calender Screen-->
+    <string name="lbl_sun">الأحد</string>
+    <string name="lbl_mon">الأثنين</string>
+    <string name="lbl_tue">الثلاثاء</string>
+    <string name="lbl_wed">الاربعاء</string>
+    <string name="lbl_thu">الخميس</string>
+    <string name="lbl_fri">الجمعة</string>
+    <string name="lbl_sat">السبت</string>
+
+
+    <!--Validation-->
+    <string name="validation_no_internet">لا يوجد انترنت، نرجو التأكد من الاتصال</string>
+    <string name="dialog_loading">نرجو الانتظار&#8230;</string>
+    <string name="validation_failed">يوجد خلل مؤقت في النظام، نرجو معاودة المحاولة مرة أخرى، نشكر تفهمكم</string>
+    <string name="validation_error">خطاء</string>
+    <string name="validation_terms_conidtion">وتفضلوا بقبول الشروط والأحكام.</string>
+    <string name="validation_userid">نرجو استخدام بريد او جوال صحيح</string>
+    <string name="validation_email">الرجاء إدخال بريد إلكتروني صحيح.</string>
+    <string name="validation_password">نرجو ادخال كلمة المرور الصحيحة</string>
+    <string name="validation_confirm_password">نرجو ادخال كلمة المرور الصحيحة</string>
+    <string name="validation_usename">نرجو ادخال اسم المستخدم</string>
+    <string name="validation_usename_beautician">زينة كلمة لا يسمح، يرجى تغيير اسمك.</string>
+    <string name="validation_confirm_password_not_match">تأكيد كلمة المرور غير مطابق</string>
+    <string name="validation_verify_code">نرجو ادخال رمز التفعيل</string>
+    <string name="validation_mobile_no">نرجو ادخال رقم الجوال</string>
+    <string name="validation_service_name">نرجو ادخال اسم الخدمة</string>
+    <string name="validation_service_description">نرجو ادخال وصف الخدمة</string>
+    <string name="validation_service_price">نرجو ادخال سعر الخدمة</string>
+    <string name="validation_service_category">نرجو اختيار فئة الخدمة</string>
+    <string name="validation_service_time">نرجو اختيار مدة الخدمة</string>
+    <string name="validation_country">نرجو اختيار الدولة</string>
+    <string name="validation_city">نرجو اختيار المدينة</string>
+    <string name="validation_service_provider_name">نرجو ادخال اسم الخدمة او الفنانة</string>
+    <string name="validation_min_price">نرجو اختيار السعر الأدنى</string>
+    <string name="validation_max_price">نرجو اختيار السعر الأقصى</string>
+    <string name="validation_date">نرجو اختيار التاريخ</string>
+    <string name="validation_time">نرجو اختيار الوقت</string>
+    <string name="validation_comment">نرجو اختيار التعليق</string>
+    <string name="validation_cancel_appointment">هل تؤكدين الغاء الموعد؟</string>
+    <string name="validation_select_start_date">نرجو تحديد تاريخ البداية</string>
+    <string name="validation_select_end_date">نرجو تحديد تاريخ النهاية</string>
+    <string name="validation_select_payment_option">نرجو تحديد وسيلة الدفع</string>
+    <string name="validation_book_appointment">نرجو تحديد خدمة واحدة على الأقل لحجز الموعد</string>
+    <string name="validation_location">نرجو تحديد المكان</string>
+    <string name="validation_schedule_day">نرجو تحديد يوم على الأقل كيوم عمل بالنسبة لك</string>
+    <string name="validation_start_time">نرجو تحديد %s \'s وقت البداية</string>
+    <string name="validation_end_time">نرجو تحديد %s \'s وقت النهاية</string>
+    <string name="validation_end_time_grater">نرجو تحديد %s \'s وقت النهاية اكبر من وقت البداية</string>
+    <string name="validation_min_max_day">عدد الايام الأقصى يجب ان يكون أكبر من عدد الايام الأدنى</string>
+    <string name="validation_add_service">الرجاء إضافة خدمة واحدة على الأقل لشراء الإعلانات الميزة.</string>
+    <string name="validation_trans_fees">Please enter transportation fees.</string>
+    <string name="validation_min_apt_fees">Please enter minimum appointment fees.</string>
+    <string name="validation_min_apt_fees_not_reach">Your selected service is not reach to minimum appointment amount, Are you sure to pay minimum appointment amount?.</string>
+
+
+    <!--Alert Message-->
+    <string name="alt_msg_Profile_pic" >صورة الحساب</string>
+    <string name="alt_msg_service_pic">صورة الخدمة</string>
+    <string name="alt_msg_set_profile_picture">كيف ترغبين في تحديد صورتك؟</string>
+    <string name="alt_msg_logout">هل تؤكدين تسجيل الخروج؟</string>
+    <string name="alt_msg_forgot_password">اسم المستخدم سبق له التسجيل! هل ترغبين في تذكر كلمة المرور </string>
+    <string name="alt_msg_max_add_service_image">لا يمكنك اضافة صور أخرى</string>
+    <string name="alt_msg_delete">هل تؤكدين رغتك في الحذف؟</string>
+    <string name="alt_msg_disable">هل تؤكدين رغبتك في عدم تفعيل هذه الخدمة؟</string>
+    <string name="alt_msg_enable">هل تؤكدين رغبتك في تفعيل هذه الخدمة؟</string>
+    <string name="alt_msg_check_availibility">نأسف، الفنانة غير متاحة في هذا التوقيت ولكنها ستكون متاحة في %s</string>
+    <string name="alt_msg_rate_user">هل تغبين في تكرار تجربتك مع </string>
+    <string name="alt_msg_privacy_policy">محتوى سياسات الخصوصية</string>
+
+    <string name="alt_msg_disable_account">تم تعطيل حسباك، نرجو التواصل معنا</string>
+    <string name="alt_msg_appointment_failed">فشل حجز الموعد، نرجو اعادة المحاولة</string>
+    <string name="alt_msg_exipred">You have been logged out</string>
+    <string name="alt_msg_buyads_failed">فشلت عملية شراء الاعلان، نرجو المحاولة مرة اخرى</string>
+
+
+    <!--Context Menu-->
+    <string name="cm_cancel">الغاء</string>
+    <string name="cm_view">عرض</string>
+    <string name="cm_delete">حذف</string>
+    <string name="cm_edit">تعديل</string>
+
+    <string name="demo_min_label">أدنى</string>
+    <string name="demo_max_label">أقصى</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_margin="@dimen/dimen_5"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/view_pager_feature_user" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0_5"
+        android:background="@color/white_secondary" />
+
+    <ListView
+        android:id="@+id/fragment_provider_by_category_horizontal_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/white_secondary"
+        android:dividerHeight="@dimen/dimen_0_5"
+        android:visibility="visible" />
+</LinearLayout>
+

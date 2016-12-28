@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/myPrimaryColor"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/toolbar_default_imageview_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/menu_button_selector"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/dimen_15"
+        android:src="@drawable/icon_menu"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/toolbar_default_textview_title"
+        style="@style/textview_title_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@+id/toolbar_default_imageview_left"
+        android:layout_toStartOf="@+id/toolbar_default_imageview_right"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/toolbar_default_imageview_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/menu_button_selector"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/dimen_15"
+        android:src="@drawable/icon_search"
+        android:visibility="visible" />
+
+</RelativeLayout>

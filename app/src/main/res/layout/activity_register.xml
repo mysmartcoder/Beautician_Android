@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/activity_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/myPrimaryColor">
+
+        <ImageView
+            android:id="@+id/activity_register_imageview_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_button_selector"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/dimen_12"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            style="@style/textview_title_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/lbl_register"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/beautician_logo" />
+
+            <TextView
+                android:id="@+id/activity_register_textview_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/myPrimaryColor"
+                android:textSize="@dimen/text_large" />
+
+
+            <EditText
+                android:id="@+id/activity_register_edittext_user_id"
+                style="@style/edittext_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:inputType="phone"
+                android:hint="@string/hint_enter_mobile_no" />
+
+            <EditText
+                android:id="@+id/activity_register_edittext_email"
+                style="@style/edittext_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:inputType="textEmailAddress"
+                android:hint="@string/hint_enter_new_emailid" />
+
+            <EditText
+                android:id="@+id/activity_register_edittext_username"
+                style="@style/edittext_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:hint="@string/hint_fullname" />
+
+            <EditText
+                android:id="@+id/activity_register_edittext_password"
+                style="@style/edittext_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/activity_register_edittext_confirm_password"
+                style="@style/edittext_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:hint="@string/hint_confirm_password"
+                android:inputType="textPassword" />
+
+            <CheckBox
+                android:id="@+id/activity_register_checkbox_accept"
+                style="@style/textview_sub_title_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:button="@drawable/checkbox_selector"
+                android:padding="@dimen/dimen_10"
+                android:text="@string/lbl_accept_terms"
+                android:textColor="@color/myPrimaryColor" />
+
+            <TextView
+                android:id="@+id/activity_register_textview_register"
+                style="@style/button_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:padding="@dimen/dimen_10"
+                android:text="@string/lbl_request_a_verification_code" />
+
+            <EditText
+                android:id="@+id/activity_register_edittext_veridy_code"
+                style="@style/edittext_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:hint="@string/hint_verify_code"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/activity_register_textview_verify"
+                style="@style/button_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:padding="@dimen/dimen_10"
+                android:text="@string/lbl_verify" />
+
+            <TextView
+                android:id="@+id/activity_register_textview_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="@string/lbl_by_sign_up_you_accept_privacy_policy_use_policy"
+                android:visibility="gone"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/activity_register_textview_privacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_5"
+                    android:text="@string/lbl_by_sign_up_privacy_policy"
+                    android:textColor="@color/myPrimaryColor" />
+
+                <TextView
+                    android:id="@+id/activity_register_textview_and"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_5"
+                    android:text="@string/lbl_by_sign_up_and"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/activity_register_textview_use"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_5"
+                    android:text="@string/lbl_by_sign_up_use_policy"
+                    android:textColor="@color/myPrimaryColor" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

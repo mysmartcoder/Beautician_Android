@@ -1,0 +1,35 @@
+<resources>
+
+    <!--
+        Check Android Theme colors for color reference:
+        https://developer.android.com/training/material/images/ThemeColors.png
+
+        Refer also to Color palette for the UI colors you should use:
+        http://www.google.com/design/spec/style/color.html#color-ui-color-palette
+    -->
+
+    <color name="myPrimaryColor">#A42DAE</color>
+    <color name="myPrimaryDarkColor">@color/myPrimaryColor</color>
+    <color name="myAccentColor">#892791</color>
+    <color name="myDrawerBackground">@color/white</color>
+    <color name="myWindowBackground">@color/white</color>
+    <color name="myTextPrimaryColor">@color/white</color>
+    <color name="myNavigationColor">@color/myPrimaryColor</color>
+
+    <color name="white">#FFF1D6</color>
+    <color name="red">#ff0000</color>
+    <color name="golden">#EFB50C</color>
+    <color name="white_secondary">#EBDEC5</color>
+    <color name="red_translucent">#BE0E0E</color>
+    <color name="dialog_bg">#50000000</color>
+
+    <!--<color name="black_translucent">#EBDEC5</color>-->
+    <!--<color name="black_translucent">#50000000</color>-->
+
+
+    <!--Custom Calendar-->
+    <color name="day_disabled_background_color">@color/white</color>
+    <color name="day_disabled_text_color">@color/white_secondary</color>
+    <color name="selected_day_background">@color/myPrimaryColor</color>
+    <color name="current_day_of_month">@color/myPrimaryColor</color>
+</resources>

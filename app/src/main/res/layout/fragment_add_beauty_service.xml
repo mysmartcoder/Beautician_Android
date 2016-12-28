@@ -1,0 +1,128 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_20">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10">
+
+
+            <Spinner
+                android:id="@+id/fragment_add_beauty_service_spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext"
+                android:padding="@dimen/dimen_5" />
+
+
+            <EditText
+                android:id="@+id/fragment_add_beauty_service_edittext_service_name"
+                style="@style/edittext_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:hint="@string/hint_service_name"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/fragment_add_beauty_service_edittext_service_description"
+                style="@style/edittext_app"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_100"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                android:hint="@string/hint_service_description"
+                android:maxLines="4" />
+
+            <Spinner
+                android:id="@+id/fragment_add_beauty_service_spinner_service_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/bg_edittext"
+                android:padding="@dimen/dimen_5" />
+
+            <Spinner
+                android:id="@+id/fragment_add_beauty_service_spinner_service_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/bg_edittext"
+                android:padding="@dimen/dimen_5"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/fragment_add_beauty_service_edittext_service_pirce"
+                style="@style/edittext_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:hint="@string/hint_service_average_price"
+                android:inputType="numberDecimal"
+                android:singleLine="false" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen_20"
+            android:paddingEnd="@dimen/dimen_5"
+            android:paddingStart="@dimen/dimen_5"
+            android:paddingTop="@dimen/dimen_10">
+
+            <beautician.beauty.android.views.HorizontalListView
+                android:id="@+id/fragment_add_beauty_service_listview_picture"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_150"
+                android:layout_marginStart="@dimen/dimen_2"
+                android:layout_marginEnd="@dimen/dimen_2"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/fragment_add_beauty_service_textview_add_picture"
+                style="@style/button_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/bg_white_button"
+                android:padding="@dimen/dimen_10"
+                android:text="@string/lbl_add_picture"
+                android:textColor="@color/myPrimaryColor" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fragment_add_beauty_service_textview_add_service"
+            style="@style/button_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            android:padding="@dimen/dimen_10"
+            android:text="@string/lbl_add_service" />
+
+
+    </LinearLayout>
+
+</ScrollView>

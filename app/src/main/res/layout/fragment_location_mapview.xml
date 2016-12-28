@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/activity_parent"
+    android:gravity="center_horizontal"
+    tools:context=".ProviderLocationMapViewFragment">
+
+    <RelativeLayout
+        android:id="@+id/fragment_location_relative_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/myPrimaryColor">
+
+        <ImageView
+            android:id="@+id/fragment_location_imageview_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_button_selector"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/dimen_15"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            style="@style/textview_title_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/lbl_location"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/fragment_location_edittext_address"
+        style="@style/edittext_app"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80"
+        android:layout_below="@+id/fragment_location_relative_header"
+        android:layout_margin="@dimen/dimen_10"
+        android:gravity="top|left"
+        android:hint="@string/hint_address"
+        android:singleLine="false" />
+
+    <LinearLayout
+        android:id="@+id/fragment_location_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_location_edittext_address"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginEnd="@dimen/dimen_10"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/fragment_location_edittext_city"
+            style="@style/edittext_app"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_city"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/fragment_location_edittext_country"
+            style="@style/edittext_app"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_weight="1"
+            android:hint="@string/hint_country"
+            android:singleLine="true" />
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/fragment_location_map_mapview"
+        android:name="beautician.beauty.android.fragments.ProviderLocationMapViewFragment"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_location_textview_save"
+        android:layout_below="@+id/fragment_location_linear" />
+
+
+    <TextView
+        android:id="@+id/fragment_location_textview_save"
+        style="@style/button_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dimen_10"
+        android:gravity="center"
+        android:padding="@dimen/dimen_8"
+        android:text="@string/lbl_save"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

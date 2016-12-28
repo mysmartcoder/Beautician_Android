@@ -1,0 +1,95 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+
+    <dimen name="dimen_0_5">0.5dp</dimen>
+    <dimen name="dimen_1">1dp</dimen>
+    <dimen name="dimen_2">2dp</dimen>
+    <dimen name="dimen_3">3dp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_7">7dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_11">11dp</dimen>
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_13">13dp</dimen>
+    <dimen name="dimen_14">14dp</dimen>
+    <dimen name="dimen_15">15dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_25">25dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_45">45dp</dimen>
+    <dimen name="dimen_35">35dp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_65">65dp</dimen>
+    <dimen name="dimen_70">70dp</dimen>
+    <dimen name="dimen_75">75dp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
+    <dimen name="dimen_90">90dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_115">115dp</dimen>
+    <dimen name="dimen_125">125dp</dimen>
+    <dimen name="dimen_150">150dp</dimen>
+    <dimen name="dimen_200">200dp</dimen>
+    <dimen name="dimen_230">230dp</dimen>
+    <dimen name="dimen_250">250dp</dimen>
+    <dimen name="dimen_280">280dp</dimen>
+    <dimen name="dimen_300">300dp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_normal_app">16.5sp</dimen>
+    <dimen name="text_sub_title">19sp</dimen>
+    <dimen name="text_title">22sp</dimen>
+    <dimen name="text_large">30sp</dimen>
+    <dimen name="minimum">100dp</dimen>
+
+    <dimen name="comment_box">80dp</dimen>
+
+    <dimen name="text_date">40sp</dimen>3
+    <dimen name="view_pager_feature_user">210dp</dimen>
+
+    <!--FAB-->
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_elevation">5dp</dimen>
+    <dimen name="fab_rise">3dp</dimen>
+    <integer name="fab_duration">100</integer>
+
+    <!-- FAB -->
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+    <dimen name="fab_shadow_size">8dp</dimen>
+    <dimen name="fab_mini_shadow_size">6dp</dimen>
+    <dimen name="fab_min_significant_scroll">4dp</dimen>
+    <dimen name="fab_elevation_lollipop">4dp</dimen>
+
+
+    <!--Custom Calendar-->
+    <dimen name="dateTitleTextSize">18sp</dimen>
+    <!--<dimen name="dateTitlePaddingBottom">5dp</dimen>-->
+    <!-- weekLayout -->
+    <dimen name="dayOfWeekTextSize">16sp</dimen>
+    <!-- weekRowLayout -->
+    <!--<dimen name="week_bottom_padding">5dp</dimen>-->
+    <!-- Day of the month -->
+    <dimen name="underline_weight">6dp</dimen>
+    <dimen name="underline_height">2dp</dimen>
+    <dimen name="day_of_month_background_size">32dp</dimen>
+    <dimen name="dayOfMonthIndicatorSize">3dp</dimen>
+    <dimen name="dayOfMonthImageMarginTop">20dp</dimen>
+    <dimen name="padding">8dp</dimen>
+
+
+    <!--New dimens-->
+    <dimen name="calendarTitlePaddingTop">8dp</dimen>
+    <dimen name="calendarTitlePaddingBottom">8dp</dimen>
+    <dimen name="weekTitlePaddingTop">5dp</dimen>
+    <dimen name="weekTitlePaddingBottom">5dp</dimen>
+    <dimen name="minDayCellHeight">40dp</dimen>
+</resources>
